@@ -72,6 +72,7 @@ namespace IskolaGUI
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Iskola GUI";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
