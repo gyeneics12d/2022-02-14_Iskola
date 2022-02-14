@@ -38,12 +38,13 @@ namespace IskolaGUI1337
             // 
             // btnTorles
             // 
-            this.btnTorles.Location = new System.Drawing.Point(10, 372);
+            this.btnTorles.Location = new System.Drawing.Point(10, 408);
             this.btnTorles.Name = "btnTorles";
             this.btnTorles.Size = new System.Drawing.Size(141, 30);
             this.btnTorles.TabIndex = 0;
             this.btnTorles.Text = "Törlés";
             this.btnTorles.UseVisualStyleBackColor = true;
+            this.btnTorles.Click += new System.EventHandler(this.btnTorles_Click);
             // 
             // btnMentes
             // 
@@ -65,12 +66,13 @@ namespace IskolaGUI1337
             // 
             // btnBetoltes
             // 
-            this.btnBetoltes.Location = new System.Drawing.Point(10, 408);
+            this.btnBetoltes.Location = new System.Drawing.Point(10, 372);
             this.btnBetoltes.Name = "btnBetoltes";
             this.btnBetoltes.Size = new System.Drawing.Size(141, 30);
             this.btnBetoltes.TabIndex = 3;
             this.btnBetoltes.Text = "Betöltés";
             this.btnBetoltes.UseVisualStyleBackColor = true;
+            this.btnBetoltes.Click += new System.EventHandler(this.btnBetoltes_Click);
             // 
             // btnKilepes
             // 
@@ -80,6 +82,7 @@ namespace IskolaGUI1337
             this.btnKilepes.TabIndex = 4;
             this.btnKilepes.Text = "Kilépés (exit)";
             this.btnKilepes.UseVisualStyleBackColor = true;
+            this.btnKilepes.Click += new System.EventHandler(this.btnKilepes_Click);
             // 
             // Form1
             // 
