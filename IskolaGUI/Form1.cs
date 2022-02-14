@@ -20,7 +20,14 @@ namespace IskolaGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (listBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("nem jelölt ki tanulót!");
+            }
+            else
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
