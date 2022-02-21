@@ -28,8 +28,8 @@ namespace IskolaGUI1337
                 foreach (Tanuló a in listBox1.Items)
                 {
                     sw.WriteLine($"{a.Év};{a.Osztály};{a.Név}");
-
                 }
+                MessageBox.Show("Sikeres mentés!");
                 sw.Close();
             }
             catch (Exception error)
