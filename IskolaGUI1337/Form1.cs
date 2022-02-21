@@ -22,7 +22,20 @@ namespace IskolaGUI1337
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                StreamWriter sw = new StreamWriter("nevekNEW.txt");
+                foreach (Tanuló a in listBox1.Items)
+                {
+                    sw.WriteLine($"{a.Év};{a.Osztály};{a.Név}");
 
+                }
+                sw.Close();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show($"Hiba történt a mentés során. \n {error}");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
